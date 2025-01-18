@@ -1,114 +1,81 @@
-🚀 Task Management Application
+# React Task Management with Priority Lists
 
+## Features
 
-A Smart and Efficient Task Management App Built with React
+- **Task Creation:** Add tasks to the respective priority lists.
+- **Edit Task:** Modify task details such as the task name and description.
+- **Delete Task:** Remove tasks when they are no longer needed.
+- **Priority Management:** Move tasks between priority lists.
+- **Visual Representation:** Each priority list is color-coded for quick identification.
 
-The Task Management Application is designed to make task organization easy and efficient. Built with React, it enables users to create, update, delete, manage, and track their tasks. This app provides an intuitive interface with powerful features such as sorting, filtering, and tracking task completion statuses.
+## Screenshots
 
-📑 Table of Contents
-Introduction
-Setup and Run Instructions
-Features
-Approach and Thought Process
-Tools Used
-Testing
-Optional Features
-Notes
-✨ Introduction
-This project implements a simple yet powerful Task Management System using React. Users can easily manage their tasks, ensuring better productivity and efficient task tracking. The application features include:
+![Screenshot 1](https://lh3.googleusercontent.com/u/0/drive-viewer/AITFw-xB_NskCCSMSnG-n9fDvajBY9qQtBOd1zc76vkmv3l0_-XrX5oeQo51jerPfEbXlkIZLFhSclNXFI4Z4CSs4joj3fUZ=w1920-h883)
 
-Creating tasks with a title, description, and priority.
-Marking tasks as complete or incomplete with a simple click.
-Filtering tasks by status: All, Completed, or Incomplete.
-Sorting tasks by creation date or priority for better organization.
-Viewing task details on a separate detail page.
-Persisting tasks using localStorage so data is saved even after page reloads.
-💻 Setup and Run Instructions
-To get started with this project on your local machine, follow these simple steps:
+## Getting Started
 
-1. Clone the Repository
-Clone the repository to your local machine using the following command:
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-bash
-Copy
-Edit
-git clone https://github.com/abhic92/react-task-management.git
-cd react-task-management
-2. Install Dependencies
-Next, install the necessary dependencies with npm:
+### Prerequisites
 
-bash
-Copy
-Edit
-npm install
-3. Run the Application
-Now, start the development server:
+- React.js and npm (Node Package Manager) should be installed on your machine.
 
-bash
-Copy
-Edit
-npm start
-Your application should now be running at http://localhost:3000 in your browser.
+### Installation
 
-4. Open the App
-Once the app is running, open it in your browser. You can now add, manage, filter, and delete tasks as per the features described below!
+1. Clone the repository:
 
-🛠️ Features
-Here’s what you can do with this Task Management Application:
+   ```bash
+   git clone https://github.com/your-username/react-task-management.git
+   ```
 
-Create, Update, and Delete Tasks: Add new tasks, mark them as completed or incomplete, and remove them from the task list.
-Task Completion: Simply click on any task to toggle its status between complete and incomplete.
-Task Filtering: Filter tasks by All, Completed, or Incomplete status to quickly organize your tasks.
-Task Sorting: Sort tasks by Creation Date or Priority to easily prioritize what’s most important.
-Task Detail Page: Click on any task to view detailed information about it in a separate page.
-Persistence with LocalStorage: Your tasks are saved in the browser’s localStorage, so they persist across page reloads.
-💡 Approach and Thought Process
-🔧 Modular Components
-I broke down the application into reusable components to keep the code clean and manageable. Components such as TaskForm, TaskList, TaskItem, TaskFilters, and SortOptions ensure flexibility and reusability. This modular approach makes the app easy to maintain and extend in the future.
+2. Navigate to the project directory:
 
-🌐 State Management
-I used React’s useState hook to manage the state for tasks, sorting options, and filters. The useEffect hook is used to load tasks from localStorage when the component mounts, ensuring the data persists across reloads.
+   ```bash
+   cd react-task-management
+   ```
 
-🔄 Routing
-React Router was used to create two essential pages:
+3. Install dependencies:
 
-HomePage: Displays the task list.
-TaskDetailPage: Displays detailed information about the selected task. This clean routing structure makes the application easy to navigate.
-📱 Responsive Design
-To ensure that the app is usable on any device, I made sure it is fully responsive, adapting smoothly to both mobile and desktop screens using CSS media queries.
+   ```bash
+   npm install
+   ```
 
-⚙️ Tools Used
-React: The main JavaScript library for building the UI.
-React Router: Used to implement routing between the Home page and the Task Detail page.
-PropTypes: For prop validation to ensure the correct data is passed to components.
-localStorage: To persist tasks even after page reloads.
-Jest / React Testing Library: For unit testing and ensuring the application behaves as expected.
-Optional Tools / Libraries:
-CSS/SCSS: I used plain CSS for styling (feel free to use SCSS or Tailwind CSS if preferred).
-🧪 Testing
-To run the unit tests for this project, follow the steps below:
+4. Start the development server:
 
-Ensure all dependencies are installed:
-bash
-Copy
-Edit
-npm install
-Run the tests with:
-bash
-Copy
-Edit
-npm test
-This will start Jest and run the test cases to ensure everything is functioning as expected.
+   ```bash
+   npm start
+   ```
 
-🌟 Optional Features
-Drag-and-Drop Task Reordering: This feature can be added for more intuitive task management, allowing users to reorder tasks easily.
-Animations: Smooth transitions (like fade-in/out) for task additions or deletions can be implemented to enhance the user experience.
-📝 Notes
-Make sure to test the following:
-All core features (task creation, updating, filtering, sorting, deleting) are functional.
-The app is responsive on both mobile and desktop screens.
-The app’s performance should score 90+ on Google PageSpeed Insights for both mobile and desktop.
-If you have any questions or need additional help, feel free to reach out!
+5. Open your browser and go to [http://localhost:3000](http://localhost:3000) to access the app.
 
-Final Thoughts:
-This project provides a clean and modern way to organize and manage tasks with flexibility and ease. The use of React, localStorage, and React Router makes the app scalable and easy to extend with additional features in the future.
+## Usage
+
+1. **Add Task:** Click on the "Add Task" button in the respective priority section, fill in the task details, and press "Save."
+
+2. **Edit Task:** Click on the task you want to edit, make the necessary changes, and press "Save Changes."
+
+3. **Delete Task:** Click on the "Delete" button next to the task you want to remove.
+
+4. **Change Priority:** Drag and drop tasks between the different priority lists to change their priority.
+
+## Built With
+
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces.
+- [Tailwind CSS](https://tailwindcss.com/) - Library for adding beautiful Styling With Responsive Design.
+
+## Contributing
+
+Contributions are welcome! Fork the repository and create a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used as inspiration.
+- Thanks to the React and open-source community for their amazing work.
+
+---
+
+Feel free to customize this README according to your project's needs. Good luck with your React Task Management app! If you have any questions or need further assistance, don't hesitate to reach out.
